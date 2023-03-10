@@ -20,13 +20,13 @@ Mostrar información: muestra la información disponible de la cuenta corriente.
 		this.saldo = saldo; 
 	}
 	
-	public boolean sacarDinero(double cantidad) {
+	public double sacarDinero(double cantidad) {
 		boolean posible=false;
-		if(saldo>cantidad) {
+		if(this.saldo>cantidad) {
 			posible=true;
 			saldo -= cantidad;
 		}
-		return posible;
+		return this.saldo;
 	}
 	
 	public void ingresarDinero(double cantidad) {
@@ -34,8 +34,8 @@ Mostrar información: muestra la información disponible de la cuenta corriente.
 	}
 	
 	public void mostrarInformacion() {
-		System.out.print(DNI);
-		System.out.print(nombre);
-		System.out.print(saldo);
+		System.out.println("DNI: " + DNI);
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Saldo: " + saldo);
 	}
 }
