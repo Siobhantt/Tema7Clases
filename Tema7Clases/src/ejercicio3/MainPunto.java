@@ -12,7 +12,7 @@ public class MainPunto {
 		sitio.desplaza(1, 1);
 		otroSitio.desplaza(1, 1);
 		
-		System.out.println(sitio.distancia(otroSitio));
+		System.out.println("Entre " +sitio + " y " + otroSitio + " hay: "+ sitio.distancia(otroSitio));
 
 		sitio.imprime();
 		otroSitio.imprime();
